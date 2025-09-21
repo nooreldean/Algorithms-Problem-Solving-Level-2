@@ -17,22 +17,22 @@ string columsparator(int i)
 {
    if (i < 10)
    {
-       return " |";
+       return"  |";
    }
    else
-   return " |";
+   return"|";
 }
 void printmultiplicationtable()
 {
     printtableheader();
     for (int i = 1; i <= 10; i++)
     {
-        cout << i << " |\t";
+        cout<< " " << i <<columsparator(i)<< "\t";
         for (int j = 1; j <= 10; j++)
         {
             cout << i * j << "\t";
         }
-        cout << "\n";
+        cout << endl;
     }
     cout << "\n----------------------------------------------------------------------------------------------------\n";
 }
